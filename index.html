@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Sandwich Maker</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+   </head>
+   <body>
+      <form id="sandwichBuilder">
+         <h4>Bread</h4>
+         <div class="breadstyling">
+<select id="bread-chooser">
+  <option value="none">Choose your bread</option>
+  <option value="white">White</option>
+  <option value="wheat">Wheat</option>
+  <option value="rye">Rye</option>
+  <option value="lettucewrap">Lettuce Wrap</option>
+</select>
+         </div>
+         <h4>Meat</h4>
+         <div class="meatstyling">
+         <ul id="meat-chooser">
+         <div class="floatleft">
+            <li><input type="checkbox" name="meat" id="turkey" value="turkey"/>Turkey</li>
+            <li><input type="checkbox" name="meat" id="ham" value="ham"/>Ham</li>
+            <li><input type="checkbox"  name="meat" id="roastbeef" value="roastbeef"/>Roast Beef</li>
+         </div>
+         <div class="floatright">
+            <li><input type="checkbox" name="meat" id="salami" value="salami"/>Salami</li>
+            <li><input type="checkbox" name="meat" id="bacon" value="bacon"/>Bacon</li>
+            <li><input type="checkbox" name="meat" id="nomeat" value="nomeat"/>No Meat</li>
+         </div>
+         </ul>
+         </div>
+         <h4>Cheese</h4>
+         <div class="cheesestyling">
+         <ul id="cheese-chooser">
+         <div class="floatleft">
+            <li><input type="checkbox" name="cheese" id="american" value="american"/>American</li>
+            <li><input type="checkbox" name="cheese" id="pepperjack" value="pepperjack"/>Pepperjack</li>
+         </div>
+         <div class="floatright">
+            <li><input type="checkbox" name="cheese" id="cheddar" value="cheddar"/>Cheddar</li>
+            <li><input type="checkbox" name="cheese" id="nocheese" value="nocheese"/>No Cheese</li>
+         </div>
+         </ul>
+         </div>
+         <h4>Veggies</h4>
+         <div class="toppingsstyling">
+         <ul id="toppings-chooser">
+         <div class="floatleft">
+            <li><input type="checkbox" name="toppings" id="tomato" value="tomato"/>Tomato</li>
+            <li><input type="checkbox" name="toppings" id="lettuce" value="lettuce"/>Lettuce</li>
+         </div>
+         <div class="floatright">
+            <li><input type="checkbox" name="toppings" id="pickle" value="pickle"/>Pickle</li>
+            <li><input type="checkbox" name="toppings" id="onion" value="onion"/>Onion</li>
+         </div>
+         </ul>
+         </div>
+         <h4>Condiments</h4>
+         <div class="condimentsstyling">
+         <ul id="condiments-chooser">
+         <div class="floatleft">
+            <li><input type="checkbox" name="condiments" id="mustard" value="mustard"/>Mustard</li>
+            <li><input type="checkbox" name="condiments" id="mayo" value="mayo"/>Mayo</li>
+         </div>
+         <div class="floatright">
+            <li><input type="checkbox" name="condiments" id="oil" value="oil"/>Oil</li>
+            <li><input type="checkbox" name="condiments" id="vinegar" value="vinegar"/>Vinegar</li>
+         </div>
+         </ul>
+         </div>
+      <input type="number" name="outputprice" id="output"><br/>
+      <button id="pricesandwich">Price Sandwich</button>
+      <script type="text/javascript" src="SandwichMaker.js"></script>
+      <script type="text/javascript" src="Bread.js"></script>
+      <script type="text/javascript" src="Meat.js"></script>
+      <script type="text/javascript" src="Cheese.js"></script>
+      <script type="text/javascript" src="Toppings.js"></script>
+      <script type="text/javascript" src="condiments.js"></script>
+      <script type="text/javascript" src="DOMHandler.js"></script>
+   </body>
+</html>

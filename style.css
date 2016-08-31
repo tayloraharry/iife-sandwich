@@ -1,0 +1,18 @@
+ul li {
+  list-style-type: none;
+};
+
+h4 {
+  margin:0;
+  padding: 0;
+}
+
+.breadstyling,
+.meatstyling,
+.cheesestyling,
+.toppingsstyling,
+.condimentsstyling {
+  border: 1px solid black;
+  width: 15em;
+}
+
